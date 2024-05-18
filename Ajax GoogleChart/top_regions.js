@@ -8,9 +8,10 @@ $(document).ready(function() {
 
         const top10Regions = sortedRegions.slice(0, 10); 
         const topRegionsList = $('#topRegionsList');
-        top10Regions.forEach(region => {
+        top10Regions.forEach((region, index) => {
             const sum = region.confirmed.reduce((total, entry) => total + parseInt(entry.value), 0);
-            const li = $('<li>').text(`${region.region}: ${sum}`);
+            const position = index + 1;
+            const li = $('<li>').text(`Top ${position}: ${region.region} - ${sum}`);
             topRegionsList.append(li);
         });
     }).fail(function() {
