@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Archivos Markdown</h1>
+    <div id="file-list">
+        <h2>Archivos Markdown Habilitados</h2>
+        <ul id="files"></ul>
+    </div>
+    <div id="file-content">
+        <h2>Contenido de Archivo</h2>
+        <div id="content"></div>
+    </div>
+    <div id="create-file">
+        <h2>Crear Nuevo Archivo Markdown</h2>
+        <input type="text" id="new-file-name" placeholder="Nombre archivo (sin .md)">
+        <textarea id="new-file-content" placeholder="Contenido Markdown"></textarea>
+        <button onclick="createFile()">Crear Archivo</button>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
