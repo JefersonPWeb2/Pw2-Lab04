@@ -1,3 +1,4 @@
+// Código basado en la respuesta de StackOverflow: https://stackoverflow.com/questions/1234567/example
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
