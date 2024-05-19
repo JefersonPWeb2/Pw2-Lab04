@@ -2,7 +2,7 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-    $.getJSON('data.json', function(data) {
+    $.getJSON('../data/data.json', function(data) {
         const arequipaData = data.find(region => region.region === 'Arequipa');
         if (!arequipaData) {
             console.error('No se encontró la región Arequipa en data.json');
@@ -36,4 +36,5 @@ function drawChart() {
         console.error('Error al cargar data.json');
     });
 }
+
 

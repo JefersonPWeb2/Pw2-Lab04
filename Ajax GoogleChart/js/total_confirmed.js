@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#btnMostrarTotales').click(function() {
-        $.getJSON('data.json', function(data) {
+        $.getJSON('../data/data.json', function(data) { 
             const totalList = $('#totalList');
             totalList.empty();
 

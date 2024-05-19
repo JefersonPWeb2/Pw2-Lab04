@@ -2,7 +2,7 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-    $.getJSON('data.json', function(data) {
+    $.getJSON('../data/data.json', function(data) { 
         const regionsToCompare = ['Amazonas', 'Lima', 'Arequipa', 'Cusco', 'Piura'];
         const chartData = [['Fecha', ...regionsToCompare]];
 

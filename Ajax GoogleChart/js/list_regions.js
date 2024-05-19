@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#btnMostrarRegiones').click(function() {
-        $.getJSON('data.json', function(data) {
+        $.getJSON('../data/data.json', function(data) {
             const regionList = $('#regionList');
             regionList.empty();
 
@@ -13,4 +13,6 @@ $(document).ready(function() {
         });
     });
 });
+
+
 

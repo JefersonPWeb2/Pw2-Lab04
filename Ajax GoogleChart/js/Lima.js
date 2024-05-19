@@ -2,7 +2,7 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-    $.getJSON('data.json', function(data) {
+    $.getJSON('../data/data.json', function(data) { 
         let nombres = [];
         const chartData = [['Fecha', 'Confirmados']];
         data.forEach(regiones => {
@@ -36,3 +36,4 @@ function drawChart() {
         console.error('Error al cargar data.json');
     });
 }
+

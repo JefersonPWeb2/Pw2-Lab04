@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('data.json', function(data) {
+    $.getJSON('../data/data.json', function(data) { 
         const sortedRegions = data.sort((a, b) => {
             const sumA = a.confirmed.reduce((total, entry) => total + parseInt(entry.value), 0);
             const sumB = b.confirmed.reduce((total, entry) => total + parseInt(entry.value), 0);
