@@ -6,7 +6,6 @@ function drawChart() {
         const regionesFiltradas = data.filter(region => region.region !== 'Lima' && region.region !== 'Callao');
         let fechas = new Set();
 
-        // Recolectar todas las fechas
         regionesFiltradas.forEach(region => {
             region.confirmed.forEach(entry => fechas.add(entry.date));
         });
