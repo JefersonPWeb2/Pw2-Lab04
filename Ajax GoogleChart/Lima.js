@@ -19,13 +19,13 @@ function drawChart() {
         const dataTable = google.visualization.arrayToDataTable(chartData);
 
         const options = {
-            title: 'Casos Confirmados en Arequipa a lo largo del tiempo',
+            title: 'Gráfico Comparativo Excluyendo Lima y Callao',
             hAxis: {
                 title: 'Fecha',
                 format: 'dd/MM/yyyy'
             },
             vAxis: {
-                title: 'Confirmados'
+                title: 'Casos'
             },
             legend: { position: 'bottom' }
         };
